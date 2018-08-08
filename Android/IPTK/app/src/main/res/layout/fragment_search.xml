@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/fragment_search_tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:layout_alignParentTop="true">
+        <TableRow>
+            <Button
+                android:id="@+id/fragment_search_breakfast"
+                android:drawablePadding="15sp"
+                android:drawableTop="@drawable/ic_breakfast"
+                android:paddingTop="32sp"
+                android:text="Breakfast"/>
+
+            <Button
+                android:id="@+id/fragment_search_lunch"
+                android:drawablePadding="15sp"
+                android:drawableTop="@drawable/ic_lunch"
+                android:paddingTop="32sp"
+                android:text="Lunch"/>
+            <Button
+                android:id="@+id/fragment_search_dinner"
+                android:drawablePadding="15sp"
+                android:drawableTop="@drawable/ic_dinner"
+                android:paddingTop="32sp"
+                android:text="Dinner"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/fragment_search_coffee"
+                android:drawablePadding="15sp"
+                android:drawableTop="@drawable/ic_coffee"
+                android:paddingTop="32sp"
+                android:text="Coffee &amp; Tea"/>
+
+            <Button
+                android:id="@+id/fragment_search_nightlife"
+                android:drawablePadding="15sp"
+                android:drawableTop="@drawable/ic_nightlife"
+                android:paddingTop="32sp"
+                android:text="Nightlife"/>
+            <Button
+                android:id="@+id/fragment_search_thingsToDo"
+                android:drawablePadding="15sp"
+                android:drawableTop="@drawable/ic_todo"
+                android:paddingTop="32sp"
+                android:text="Things to do"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/fragment_search_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="OR"
+        android:gravity="center"
+        android:textSize="26sp"
+        android:layout_below="@+id/fragment_search_tableLayout"/>
+
+
+    <EditText
+        android:id="@+id/fragment_search_query_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="What are you looking for?"
+        android:textSize="26sp"
+        android:layout_below="@+id/fragment_search_textView"/>
+
+    <Button
+        android:id="@+id/fragment_search_searchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search!"
+        android:layout_below="@+id/fragment_search_query_editText"/>
+
+
+    <com.roughike.bottombar.BottomBar
+        android:id="@+id/bottomBar"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        app:bb_tabXmlResource="@xml/bottombar_tabs"/>
+
+</RelativeLayout>

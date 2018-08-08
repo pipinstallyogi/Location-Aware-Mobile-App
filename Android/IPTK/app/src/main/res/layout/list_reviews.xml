@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/list_review_UserPicture"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:scaleType="centerCrop"
+        android:layout_alignBottom="@+id/list_review_time"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        app:riv_corner_radius="30dip"
+        app:riv_border_width="2dip"
+        app:riv_border_color="#333333"
+        app:riv_oval="true"/>
+
+    <TextView
+        android:id="@+id/list_review_UserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/list_review_UserPicture"
+        android:layout_toEndOf="@+id/list_review_UserPicture"
+        android:text="Aditya Bhamidi"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/list_review_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_review_UserName"
+        android:layout_toRightOf="@+id/list_review_UserPicture"
+        android:layout_toEndOf="@+id/list_review_UserPicture"
+        android:text="Review Time"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"/>
+
+
+    <TextView
+        android:id="@+id/list_review_reviewText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_review_time"
+        android:layout_toRightOf="@+id/list_review_UserPicture"
+        android:layout_toEndOf="@+id/list_review_UserPicture"
+        android:text="review ......"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="10dp"
+        android:textSize="26sp"/>
+
+    <TextView
+        android:id="@+id/list_review_UserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+
+
+</RelativeLayout>
